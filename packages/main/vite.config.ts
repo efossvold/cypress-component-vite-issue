@@ -7,4 +7,9 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   envDir: join(__dirname, "../.."),
   plugins: [tsconfigPaths({ root: ".." }), react()],
+  server: {
+    fs: {
+      allow: [join(__dirname, '..', 'utils')]
+    } 
+  }
 });
