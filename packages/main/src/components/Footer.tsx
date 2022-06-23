@@ -2,10 +2,10 @@ import React from "react";
 import { helloWorld } from "@foo/utils";
 
 const Footer: React.FC = () => (
-  <div className="mt-4">
+  <footer className="mt-4">
     {/* hello world */}
     {helloWorld()}
-  </div>
+  </footer>
 );
 
 export default Footer;
